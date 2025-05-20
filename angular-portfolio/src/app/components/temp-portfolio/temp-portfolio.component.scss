@@ -1,26 +1,40 @@
+$bg-dark: #f1f1f1;       // lighter than before
+$purple: #9a6dfc;
+$pink: #ffc372;
+$orange: #ffc372;
+$text-light: #ffc372;
+
 .portfolio-container {
+  background-color: $bg-dark;
+  color: $text-light;
+  min-height: 100vh;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
-  max-width: 960px;
-  margin: 0 auto;
 }
 
 .profile-card {
+  background-color: $purple;
+  color: white;
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
   text-align: center;
 
   img[mat-card-image] {
     object-fit: cover;
-    width: 20%;
+    width: 40%;
+    max-width: 150px;
     height: auto;
-    border-radius: 20%;
+    border-radius: 50%;
     margin: 1rem auto;
     display: block;
+    border: 4px solid $pink;
+  }
+
+  mat-card-title {
+    font-size: 1.75rem;
   }
 }
 
@@ -29,16 +43,34 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
+
+  a {
+    color: $orange;
+    text-align: center;
+
+    .material-icons {
+      font-size: 24px;
+      display: block;
+    }
+
+    &:hover {
+      color: $pink;
+    }
+  }
 }
 
 .card-feed {
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
+  width: 100%;
+  max-width: 960px;
 }
 
 .content-card {
-  height: 100%;
+  background-color: #2b2b5a;  // lighter than #1e1e38
+  border-left: 4px solid $pink;
+  color: $text-light;
 }
+
