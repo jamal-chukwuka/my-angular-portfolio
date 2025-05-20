@@ -1,0 +1,27 @@
+<main class="portfolio-container"> 
+    <mat-card class="profile-card">
+         <img mat-card-image src="assets/profile.jpg" alt="Jamal Nezianya">
+    <mat-card-title>Jamal Nezianya</mat-card-title>
+    <mat-card-content>
+      <p>
+        Software engineer passionate about frontend architecture, AI, and creative tech. Building across frameworks and cultures.
+      </p>
+    </mat-card-content>
+        <mat-divider></mat-divider>
+    `   <mat-card-actions class="social-links">
+            <a mat-button href="https://github.com/jamal-chukwuka" target="_blank">GitHub</a>
+            <a mat-button href="https://dev.to/jamal-chukwuka" target="_blank">Dev.to</a>
+            <a mat-button href="https://bsky.app/profile/jamal-chukwuka.bsky.social" target="_blank">Bluesky</a>
+            <a mat-button href="https://www.linkedin.com/in/jamal-nezianya/" target="_blank">LinkedIn</a>
+        </mat-card-actions>
+    </mat-card>
+
+    <section class="card-feed">
+        <mat-card *ngFor="let card of cards" class="content-card">
+            <mat-card-title>{{ card.title }}</mat-card-title>
+            <mat-card-content> {{ card.description }}</mat-card-content>
+        </mat-card>
+    </section>
+
+
+</main>
