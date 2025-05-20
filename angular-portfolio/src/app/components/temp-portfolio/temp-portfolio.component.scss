@@ -10,8 +10,20 @@
 
 .profile-card {
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
   text-align: center;
+
+  img[mat-card-image] {
+    object-fit: cover;
+    width: 20%;
+    height: auto;
+    border-radius: 20%;
+    margin: 1rem auto;
+    display: block;
+  }
 }
+
 
 .social-links {
   display: flex;
