@@ -6,6 +6,7 @@ import { MatDividerModule } from '@angular/material/divider';
 
 
 @Component({
+  standalone: true,
   selector: 'app-temp-portfolio',
   imports: [CommonModule, MatCardModule, MatButtonModule, MatDividerModule],
   templateUrl: './temp-portfolio.component.html',
